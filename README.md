@@ -36,3 +36,7 @@ N@N and M@N are defined as follows:
 
 
 We also provide the training log and the learning curves of the proposed method. You can find them in /logs folder and the attached jupyter notebook.
+
+
+Please note that the proposed IR method is for transferring knowledge from model's predictions.
+Topology Distillation (KDD'21), which is a follow-up study of DE and transfers the latent knowledge, is available in https://github.com/SeongKu-Kang/Topology_Distillation_KDD21.¶
