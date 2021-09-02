@@ -1,18 +1,17 @@
-# IR-RRD: Item-side
+# Item-side Ranking Regularized Distillation for Recommender System
 
 ## 1. Overview
-This repository provides the source code of our paper: DE-RRD: A Knowledge Distillation Framework for Recommender System, accepted in CIKM'20 as a full research paper.
+This repository provides the source code of our paper: Item-side Ranking Regularized Distillation for Recommender System, accepted in Information Sciences'21.
 
 
-In the paper, we propose two distillation methods:
-1. Distillation Experts (DE) that distills the teacher's latent knowledge.
+In the paper, we propose Item-side ranking Regularization (IR) method for ranking distillation in Recommender System. The proposed IR method utilizes item-side ranking information, effectively preventing the student model from being overfitted and enabling the student model to more accurately learn the teacher’s prediction results.
 
-2. Relaxed Ranking Distillation (RRD) that distills ranking information from the teacher's predictions.
-
-![oveview](https://user-images.githubusercontent.com/68782810/94357694-06ae0000-00d6-11eb-8ad4-9a389f99ee02.png)
+![oveview](https://user-images.githubusercontent.com/68782810/131841203-c73a650c-1337-4785-9329-47d170735979.png)
 
 
 ## 2. Evaluation
+We evaluate the effectiveness of IR with the state-of-the-art ranking distillation method, RRD (CIKM'20).
+
 ### 2.1. Leave-One-Out (LOO) protocol
 We provide the leave-one-out evaluation protocol used in the paper.
 The protocol is as follows:
@@ -36,9 +35,4 @@ N@N and M@N are defined as follows:
 ![Large](https://latex.codecogs.com/svg.latex?\text{N}%20@%20N%20=%20\frac%20{%201%20}%20{%20|%20\mathcal%20{%20U%20}%20_{test}%20|%20}%20\sum%20_%20{%20u%20\in%20\mathcal%20{%20U%20}_{test}%20}%20\frac%20{%20\log%202%20}%20{%20\log%20\left(%20p%20_%20{%20u%20}%20+%201%20\right)%20}\text{,%20M}%20@%20N%20=%20\frac%20{%201%20}%20{%20|%20\mathcal%20{%20U%20}_{test}%20|%20}%20\sum%20_%20{%20u%20\in%20\mathcal%20{%20U%20}%20_{test}%20}%20\frac%20{%201%20}%20{%20p%20_%20{%20u%20}%20})
 
 
-## 3. Usage
-A. For DE, simply run "main_DE.py"
-
-B. For RRD, simply run "main_URRD.py"
-
-We also provide the training log and the learning curve of each method. You can find them in /logs folder and the attached jupyter notebook.
+We also provide the training log and the learning curves of the proposed method. You can find them in /logs folder and the attached jupyter notebook.
