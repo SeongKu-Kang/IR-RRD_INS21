@@ -1,4 +1,4 @@
-# DE-RRD: A Knowledge Distillation Framework for Recommender System
+# IR-RRD: Item-side
 
 ## 1. Overview
 This repository provides the source code of our paper: DE-RRD: A Knowledge Distillation Framework for Recommender System, accepted in CIKM'20 as a full research paper.
